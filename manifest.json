@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-hr-recruiting",
-  "version": "1.0.0",
-  "description": "HR & Recruiting Assistant — Greenhouse/Lever/Workday integration for sourcing, screening, scheduling, and offers",
+  "version": "1.0.1",
+  "description": "HR & Recruiting Assistant \u2014 Greenhouse/Lever/Workday integration for sourcing, screening, scheduling, and offers",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-hr-recruiting",
   "homepage": "https://cortexprism.io/marketplace/plugins/hr-recruiting",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "hr_list_candidates",
@@ -33,6 +36,13 @@
     }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
